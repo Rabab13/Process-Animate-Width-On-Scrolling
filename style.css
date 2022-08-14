@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    
+}
+section{
+    height:300px;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+}
+.one{
+    background-color: rgb(184, 184, 189);
+}
+.two{
+    background-color: rgb(5, 5, 195);
+}
+.three{
+    background-color: rgb(180, 180, 183);
+}
+.four{
+    background-color: rgb(5, 5, 195);
+}
+img{
+    max-width: 200px;
+    margin: auto 0;
+    max-height: 250px;
+}
+.progress {
+    width: 60%;
+    position: relative;
+}
+.progress .teq {margin-left: 30px;}
+
+.progress .teq div {background-color: #f2f2f2;height: 25px;}
+.progress h3{
+    margin: 10px 0;
+}
+.progress .teq div span {
+    background-color:#0505c3;
+	position: absolute;
+	width: 60%;
+	height: 25px;
+	display: block;
+	color: rgb(252, 250, 250);
+	text-align: right;
+    transition:width 2s ease-in-out;
+	line-height: 25px;}
+.progress .teq div span::before{
+	content: attr(data-progress);
+	position: absolute;
+	background-color: black;
+	color: #fff;
+	padding:0 8px;
+	text-align: center;
+	border-radius:4px;
+	right:-18px;
+	top:-40px;
+}
+.progress .teq div span::after{
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-width:8px;
+	border-color:black transparent transparent;
+	right:-5px;
+	top:-15px;
+    
+}
